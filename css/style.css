@@ -1,0 +1,32 @@
+figure:hover figcaption.layer {
+    transform: translateY(0);
+}
+
+figcaption.layer {
+    --Spacing-Layer: 10px;
+    bottom: var(--Spacing-Layer);
+    left: var(--Spacing-Layer);
+    right: var(--Spacing-Layer);
+    transform: translateY(calc(100% + var(--Spacing-Layer)));
+    transition: 0.5s all;
+}
+
+figure.image img {
+    height: 250px;
+}
+
+@media screen and (min-width:786px)and (max-width:992px) {
+    figure.image img {
+        height: 220px;
+    }
+}
+
+.inner__image{
+    width: 50%;
+    height: 400px;
+    background-image: url(../images/1.jpg);
+    background-size: 100% 100%;
+}
+.inner__image i{
+    cursor: pointer;
+}
